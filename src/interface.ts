@@ -13,7 +13,7 @@ interface Source {
     name: string;
 }
 
-interface News {
+interface NewsCard {
     url: string;
     urlToImage: string;
     title: string;
