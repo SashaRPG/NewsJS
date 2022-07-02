@@ -32,7 +32,7 @@ interface ShowSource {
 interface ShowNews {
     status: string;
     total?: number;
-    articles?: Array<News>;
+    articles?: Array<NewsCard>;
 }
 
 interface Options {
@@ -44,4 +44,4 @@ interface ResponseObj {
     options?: Options;
 }
 
-export { Info, News, ShowNews, ShowSource, Options, ResponseObj };
+export { Info, NewsCard, ShowNews, ShowSource, Options, ResponseObj };
