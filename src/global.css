@@ -1,16 +1,44 @@
+:root {
+    color: #17181c;
+}
+
 body {
-    color: #fff;
-    background: #17181c;
+    background: #ededed;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     padding: 10px 30px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
 }
 
 header h1 {
-    font-size: 40px;
+    margin: 0;
+    font-size: 3rem;
     font-weight: 800;
+    text-align: center;
+}
+
+.main {
+    grid-area: container;
+    display: grid;
+    grid-template: 200px 1fr / 1fr 1fr;
+    grid-template-areas: 'aside aside' 'main main';
+}
+
+.sources {
+    grid-area: aside;
+}
+
+.news {
+    grid-area: main;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
 }
 
 footer {
@@ -21,11 +49,11 @@ footer {
 }
 footer .copyright {
     font-size: 14px;
-    color: #333;
+    color: #626161;
     text-align: center;
 }
 footer .copyright a {
-    color: #444;
+    color: #000;
 }
 footer .copyright a:hover {
     color: #555;

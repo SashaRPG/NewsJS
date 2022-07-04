@@ -1,8 +1,8 @@
 .sources {
     display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 120px;
+    max-height: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     overflow: auto;
     align-items: center;
     font: 300 1em 'Fira Sans', sans-serif;
@@ -10,22 +10,29 @@
 
 .source__item {
     background: none;
-    border: 2px solid #30c5ff;
+    border: 2px solid #000000;
     font: inherit;
     line-height: 1;
     margin: 0.5em;
     padding: 1em 2em;
-    color: #70d6ff;
+    color: #f24aa4;
     transition: 0.25s;
+    border-radius: 0.3rem;
     cursor: pointer;
 }
 
 .source__item:hover,
 .source__item:focus {
-    border-color: #3fcc59;
-    color: #69db7e;
-    box-shadow: 0 0.5em 0.5em -0.4em #3fcc59;
-    transform: translateY(-0.25em);
+    border-color: #202020cc;
+    background-color: #2d2929;
+    color: #f24aa4;
+    transform: scale(1.05);
+}
+
+.source__item:active {
+    border-color: #202020e6;
+    background-color: #2d2929;
+    color: #f24aa4;
 }
 
 .source__item-name {
